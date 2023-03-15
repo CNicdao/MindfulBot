@@ -1,0 +1,1 @@
+# This file will be mainly used for basic functionality of the bot.
