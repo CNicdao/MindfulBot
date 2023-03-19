@@ -1,5 +1,6 @@
 # This file is going to be used to hold all the files that the bot will use when responding to the user.
 import discord
+import random
 
 # Basic test responses
 def test_response(message: str) -> str:
@@ -11,10 +12,14 @@ def test_response(message: str) -> str:
     if user_input == 'why':
         return "cause why not?"
 
+    # Sends the user complements!
     if user_input == 'send me a complement':
-        return complements
+        option = random.randint(0,3)
+        return complements[option]
 
     else:
         return "Sorry, didn't catch that!"
 
-complements = "You look great today!"
+# A list of complements
+complements = ["You look great today!","You're really nice!","I'm proud of you!",
+               "You're super cute!"]
