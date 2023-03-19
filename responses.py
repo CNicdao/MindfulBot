@@ -1,5 +1,6 @@
 # This file is going to be used to hold all the files that the bot will use when responding to the user.
 
+# Basic test responses
 def test_response(message: str) -> str:
     user_input = message.lower()
 
@@ -7,7 +8,7 @@ def test_response(message: str) -> str:
         return "Hey you!"
 
     if user_input == 'why':
-        return "Test"
+        return ":)"
 
     else:
         return "Sorry, didn't catch that!"
