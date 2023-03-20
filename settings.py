@@ -1,0 +1,1 @@
+# This is the settings file used to customize the way MindfulBot will interact with the user.
